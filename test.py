@@ -19,3 +19,6 @@ git reset --hard commit_id：使用此命令，在历史版本间穿梭
 先手动删除文件，然后使用git rm <file>，进而使用git commit -m "XXX"
 如果删错了，使用git checkout -- test.py恢复到版本库的最新版本
 注意：从来没有被添加到版本库就被删除的文件，是无法恢复的
+
+网址：git remote add origin git@github.com:hwxuan/Technics.git
+密码：公钥SSH
