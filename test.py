@@ -20,5 +20,12 @@ git reset --hard commit_id：使用此命令，在历史版本间穿梭
 如果删错了，使用git checkout -- test.py恢复到版本库的最新版本
 注意：从来没有被添加到版本库就被删除的文件，是无法恢复的
 
-网址：git remote add origin git@github.com:hwxuan/Technics.git
+git remote add origin git@server-name:path/repo-name.git：关联一个远程库
 密码：公钥SSH
+密码：允许访问SSH的密码
+
+git push -u origin master（第一次提交）
+git push origin master（第二次及以后的提交）
+
+git remote -v：查看远程库信息
+git remote rm <name>：此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。
