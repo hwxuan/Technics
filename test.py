@@ -38,7 +38,6 @@ git clone git@server-name:path/repo-name.git：克隆一个本地仓库
 git switch master：切换到已有的master分支
 git branch：命令会列出所有分支，当前分支前面会标一个*号
 git merge dev：把dev分支的工作成果合并到master分支上，合并指定分支到当前分支（master）
-<<<<<<< HEAD
 git branch -d dev：删除dev分支
 git log --graph --pretty=oneline --abbrev-commit：查看分支合并图
 
