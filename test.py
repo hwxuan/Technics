@@ -2,8 +2,8 @@ git：命令行输入git，可以查看系统有没有安装Git
 git config --global user.name "xuanhongwei"
 git config --global user.email "1325997218@qq.com"
 git init：把目录变成Git可以管理的仓库
-git add test.py：把文件添加到仓库
-git commit -m "add XXX"：把文件提交到仓库
+git add test.py：把文件添加到暂存区
+git commit -m "add XXX"：把文件提交到版本库(仓库)
 git status：随时掌握工作区的状态
 git diff：如果git status告知有文件被修改过，用git diff可以查看修改的内容
 git log：穿梭历史前，用此命令查看提交历史，以便确定要回退到哪个版本，添加--pretty oneline，精简显示
@@ -29,3 +29,5 @@ git push origin master（第二次及以后的提交）
 
 git remote -v：查看远程库信息
 git remote rm <name>：此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。
+
+git clone git@server-name:path/repo-name.git：克隆一个本地仓库
