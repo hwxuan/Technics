@@ -32,3 +32,10 @@ git remote -v：查看远程库信息
 git remote rm <name>：此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。
 
 git clone git@server-name:path/repo-name.git：克隆一个本地仓库
+
+分支管理
+创建dev分支，然后切换到dev分支：git checkout -b dev=git branch dev + git checkout dev；git switch -c dev
+git switch master：切换到已有的master分支
+git branch：命令会列出所有分支，当前分支前面会标一个*号
+git merge dev：把dev分支的工作成果合并到master分支上，合并指定分支到当前分支（master）
+git branch -d dev：删除dev分支
